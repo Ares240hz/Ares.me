@@ -7,6 +7,46 @@ body, html {
     font-family:Verdana,sans-serif;
 }
 
+/*LOADER*/
+.loader{
+
+}
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
 /* The navigation bar */
 .navbar {
     overflow: hidden;
@@ -14,6 +54,7 @@ body, html {
     position: fixed !important;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 .bg-img {
     background-position: center;
@@ -31,7 +72,7 @@ body, html {
     top:50%;
     left:0%;
     transform:translate(0%,-50%);
-    -ms-transform:translate(-0%,-50%)
+    -ms-transform:translate(-0%,-50%);
 }
 .text-about{
     text-align:center!important;
@@ -41,8 +82,8 @@ body, html {
     padding:0.01em 16px;
     color:#fff!important;
     background-color:#000!important;
-    padding: 330px 100px;
-}
+    padding: 400px 100px;
+} 
 .footer{
     text-align:center!important;
     color:#fff!important;
@@ -207,19 +248,6 @@ body, html {
     }
 }
 /* FIN Scroll Down */
-
-/* Slider */
-.slider {
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-.slider > div {
-    flex-shrink: 0;
-    width: 300px;
-    height: 300px;
-}
-/* FIN SLIDER */
 
 .w3-contain:after,.w3-contain:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
 .w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
