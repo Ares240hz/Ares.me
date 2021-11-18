@@ -49,6 +49,7 @@ if (typeof selection.removeRange === 'function') {
     selection.removeAllRanges();
 }
 }
+
 var myVar;
 
 function myFunction() {
