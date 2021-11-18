@@ -5,6 +5,7 @@ body, html {
     font-size:15px;
     line-height: 1.8;
     font-family:Verdana,sans-serif;
+    scroll-behavior: smooth;
     
 }
 
