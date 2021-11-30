@@ -1,3 +1,4 @@
+/* SCROLL TOP BTN */
 var mybutton = document.getElementById("upBtn");
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
@@ -5,6 +6,11 @@ var mybutton = document.getElementById("upBtn");
         mybutton.style.display = "block";
         } else {
         mybutton.style.display = "none";
+        }
+        if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+            $(".navbar").fadeIn();
+        } else {
+            $(".navbar").fadeOut();
         }
     }
     function upFunction() {
@@ -48,15 +54,4 @@ if (typeof selection.removeRange === 'function') {
 } else if (typeof selection.removeAllRanges === 'function') {
     selection.removeAllRanges();
 }
-}
-
-var myVar;
-
-function myFunction() {
-    myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
 }
