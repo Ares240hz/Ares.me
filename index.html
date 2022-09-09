@@ -1,126 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Arès</title>
         <meta charset="UTF-8">
+        <title> Arès</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="img/focus-4k.jpg"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script data-require="jquery" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link rel="shortcut icon" type="image/png" href="img/earthCrop.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://xaedraz.github.io/Arès.dev/">
+        <meta property="og:title" content="Arès | Personal website">
+        <meta property="og:description" content="Personal website of Arès, containing various informations about him.">
+        <meta property="og:image" content="img/earthCrop.png">
     </head>
-    <body >
-        <header class="css-selector">
-            <nav id="NavBar" class="navbar navbar-expand-lg navbar-light bg-tr">
-                <a class="navbar-brand" href=""></a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active logo">
-                        <a class="nav-link" href="index.html">Arès</a>
-                    </li>
-                    <div style="width:1370px"></div>
-                    <li class="nav-item active navBtn">
-                      <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item active navBtn">
-                        <a class="nav-link" href="#cards">Cards</a>
-                      </li>
-                    <li class="nav-item active navBtn"> 
-                        <a class="nav-link" href="#skills">Skills</a>
-                      </li>
-                  </ul>
-                </div>
-            </nav>
-            <div class="title">
-                <span class="typed"></span>
-            </div>
-            <div class="scrolldown">
-                <svg height="30" width="10">
-                    <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
-                    <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
-                </svg>
-            </div>
+    <body id="home">
+        <header id="navbar" class="showcontent" style="display: none;">
+            <a href="index.html" class="logo"><img src="img/earthCrop.png" alt="logo"></a><a class="textlogo">Arès</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#me">Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#socials">Socials</a></li>
+            </ul>
         </header>
         <main>
-            <section id="about" style="padding: 23%;">
-                <h3 class="text-center">À propos de moi</h3>
-                <p class="text-about">Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.</p>
-            </section>
-            <section id="cards" class="bg-light" style="padding: 20%;">
-                <table style="width:100%;">
-                    <tr>
-                        <td style="width:33%">
-                            <div class="card" style="width: 80%;">
-                                <img class="card-img-top" src="img/focus-4k.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-dark">Go somewhere</a>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="width:33%">
-                            <div class="card" style="width: 80%;">
-                                <img class="card-img-top" src="img/focus-4k.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-dark">Go somewhere</a>
-                                </div>
-                            </div>
-                        </td>
-                        <td style="width:33%">
-                            <div class="card" style="width: 80%;">
-                                <img class="card-img-top" src="img/focus-4k.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-dark">Go somewhere</a>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-            <section class="skills bg-img w3-row-padding" id="skills">
-                <div class="w3-col m6">
-                    <h2>Mes centres d'intérêts.</h2>
-                    <p>Je suis passionné par le hardware et j'adore coder toute sorte d'algorythme.<br> Je passe aussi le plus claire de mon temps à jouer aux jeux vidéos avec mes amis.</p>
+            <section>
+                <div class="anim-text">
+                    <svg id="ares-logo" width="75vw"  height="300" viewBox="0 0 331 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M66.416 111.68H22.64L14.576 134H0.752014L37.04 34.208H52.16L88.304 134H74.48L66.416 111.68ZM62.672 101.024L44.528 50.336L26.384 101.024H62.672Z" stroke="white" stroke-width="1" stroke-linecap="round"/>
+                      <path d="M156.967 134L133.063 92.96H117.223V134H104.119V33.632H136.519C144.103 33.632 150.487 34.928 155.671 37.52C160.951 40.112 164.887 43.616 167.479 48.032C170.071 52.448 171.367 57.488 171.367 63.152C171.367 70.064 169.351 76.16 165.319 81.44C161.383 86.72 155.431 90.224 147.463 91.952L172.663 134H156.967ZM117.223 82.448H136.519C143.623 82.448 148.951 80.72 152.503 77.264C156.055 73.712 157.831 69.008 157.831 63.152C157.831 57.2 156.055 52.592 152.503 49.328C149.047 46.064 143.719 44.432 136.519 44.432H117.223V82.448Z" stroke="white" stroke-width="1" stroke-linecap="round"/>
+                      <path d="M204.833 44.288V77.84H241.409V88.64H204.833V123.2H245.729V134H191.729V33.488H245.729V44.288H204.833ZM231.329 18.512V28.304L200.657 11.888V0.511993L231.329 18.512Z" stroke="white" stroke-width="1" stroke-linecap="round"/>
+                      <path d="M297.381 135.008C290.757 135.008 284.805 133.856 279.525 131.552C274.341 129.152 270.261 125.888 267.285 121.76C264.309 117.536 262.773 112.688 262.677 107.216H276.645C277.125 111.92 279.045 115.904 282.405 119.168C285.861 122.336 290.853 123.92 297.381 123.92C303.621 123.92 308.517 122.384 312.069 119.312C315.717 116.144 317.541 112.112 317.541 107.216C317.541 103.376 316.485 100.256 314.373 97.856C312.261 95.456 309.621 93.632 306.453 92.384C303.285 91.136 299.013 89.792 293.637 88.352C287.013 86.624 281.685 84.896 277.653 83.168C273.717 81.44 270.309 78.752 267.429 75.104C264.645 71.36 263.253 66.368 263.253 60.128C263.253 54.656 264.645 49.808 267.429 45.584C270.213 41.36 274.101 38.096 279.093 35.792C284.181 33.488 289.989 32.336 296.517 32.336C305.925 32.336 313.605 34.688 319.557 39.392C325.605 44.096 329.013 50.336 329.781 58.112H315.381C314.901 54.272 312.885 50.912 309.333 48.032C305.781 45.056 301.077 43.568 295.221 43.568C289.749 43.568 285.285 45.008 281.829 47.888C278.373 50.672 276.645 54.608 276.645 59.696C276.645 63.344 277.653 66.32 279.669 68.624C281.781 70.928 284.325 72.704 287.301 73.952C290.373 75.104 294.645 76.448 300.117 77.984C306.741 79.808 312.069 81.632 316.101 83.456C320.133 85.184 323.589 87.92 326.469 91.664C329.349 95.312 330.789 100.304 330.789 106.64C330.789 111.536 329.493 116.144 326.901 120.464C324.309 124.784 320.469 128.288 315.381 130.976C310.293 133.664 304.293 135.008 297.381 135.008Z" stroke="white" stroke-width="1" stroke-linecap="round"/>
+                    </svg>                  
                 </div>
-                <div class="w3-col m6">
-                    <p><i class="fa fa-desktop margin-right"> Hardware</i></p>
-                    <div class="gray">
-                        <div class="percentage" style="width:95%">95%</div>
-                    </div>
-                    <p><i class="fa fa-laptop margin-right"> Développement d'application</i></p>
-                    <div class="gray">
-                        <div class="percentage" style="width:90%">90%</div>
-                    </div>
-                    <p><i class="fa fa-play margin-right"> Gaming</i></p>
-                    <div class="gray">
-                        <div class="percentage" style="width:95%">95%</div>
-                    </div>
+                <div class="scrolldown" id="scrolldown" style="display: none;">
+                    <svg height="30" width="10">
+                        <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                        <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                    </svg>
                 </div>
             </section>
-            <button onclick="upFunction()" id="upBtn" title="Remonter"><img class="btnImg" src="img/up.png" alt="Remonter"></button>
-        </main>
-        <footer id="footer" class="footer padding-64">
-            <p>© 2021 Copyright: <a class="js-copy text-white link hover-text-gray" data-target="#tocopy"><i class="fab fa-discord"></i><span id="tocopy"> Arès </span><span class="popup" id="popup"><i class="fad fa-clipboard-check"></i> Copié !</span></a></p>
-        </footer>
-        <script src="script.js" type="text/javascript"></script>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script>
-            var typed = new Typed('.typed', {
-                strings: ['Arès','Achille'],
-                typeSpeed: 80,
-                backSpeed: 50,
-                smartBackspace: true,
-                loop: true
-            });
-        </script>
+            <div class="showcontent" style="display: none;" id="showcontent">
+                <section id="me">
+                    <div class="card">
+                        <img src="img/earthCrop.png" alt="Arès" style="width: 50%">
+                        <h1>Hi, I'm Arès</h1>
+                        <br>
+                        <p>I'm a 16 years old developer apprentice working at Jaeger-LeCoultre.
+                        <br>On this website, you will be able to know more about me and my projects.</p>
+                    </div>
+                </section>
+                <section id="projects">
+                    <div style="height:10rem;"></div>
+                    <div class="container-projects">
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <h2>Smart<br>App</h2>
+                                    <h3>SmartApp</h3>
+                                    <p>SmartApp is a database project, that was made for the tracing of the apprentices.</p>
+                                    <a href="https://github.com/Xaedraz/SmartApp" target="_blank">Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <h2>M293<br>Site</h2>
+                                    <h3>Website</h3>
+                                    <p>This is my web project for module 293 exam.</p>
+                                    <a href="https://github.com/Xaedraz/M293" target="_blank">Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="box">
+                                <div class="content">
+                                    <h2>More<br>soon</h2>
+                                    <h3>More soon</h3>
+                                    <p>I'm still working on projects, you can see their evolutions on my github page.</p>
+                                    <a href="https://github.com/Xaedraz" target="_blank">GitHub profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="socials">
+                    <div style="height:25rem;"></div>
+                    <div class="socials" id="socials">
+                        <h1>Socials & Links</h1>
+                        <div class="socials-icons">
+                          <a href="" target="_blank"><i class="bi bi-discord" id="discord-tooltip" title="Discord"></i></a>
+                          <a href="https://github.com/Xaedraz" target="_blank"><i class="bi bi-github" id="github-tooltip" title="GitHub"></i></a>
+                          <a href="https://twitter.com/Arse240hz" target="_blank"><i class="bi bi-twitter" id="twitter-tooltip" title="Twitter"></i></a>
+                        </div>
+                      </div>
+                </section>
+                <button onclick="upFunction()" id="upBtn" title="Up"><img  class="btnImg" src="img/up.png" alt="Remonter"></button>
+                <footer id="footer" class="footer showcontent" style="display: block;">
+                    <p>Powered by: <a href="https://github.com/Xaedraz" target="_blank" class="underline">Arès</a></p>
+                </footer>
+            </div>
+            </main>
+        <script src="script.js"></script>
     </body>
 </html>
