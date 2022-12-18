@@ -18,3 +18,8 @@ setTimeout(function(){
     document.getElementById("scrolldown").removeAttribute('style');
     document.getElementById("showcontent").removeAttribute('style');
   }, 3000);
+
+function copy() {
+   // Copy the text inside the text field
+  navigator.clipboard.writeText("Arès#2712");
+}
